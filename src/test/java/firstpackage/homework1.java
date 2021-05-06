@@ -12,6 +12,7 @@ public class homework1 {
 
         WebDriver driver = new ChromeDriver();
        driver.get("https://www.youtube.com/");
+       driver.quit();
 
     }
 }
