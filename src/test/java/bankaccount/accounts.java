@@ -10,8 +10,8 @@ public class accounts {
    int savingsAccountBalance;
    int savingsAccountNum;
    int checkingAccountNum;
-   private int accountNum =1000;
-   int numAccount;
+   private int accountNum = 1000;
+   int numAccount= 0;
     Scanner scanner= new Scanner(System.in);
 
     //method to deposit
