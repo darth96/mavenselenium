@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class customer {
     private String name;
-    private int ssn;
+    private final int ssn;
     private String address;
 
     Scanner scanner = new Scanner(System.in);
@@ -23,9 +23,13 @@ public class customer {
         String edit = scanner.next();
         switch (edit.toUpperCase()){
             case"A":
+                System.out.println("Please enter your new name");
+                 name = scanner.next();
                 System.out.println("your name has been changed" + name);
                 break;
             case"B":
+                System.out.println("Please enter your new address");
+                address = scanner.next();
                 System.out.println("Your address has been changed" + address);
                 break;
             default:
@@ -33,7 +37,7 @@ public class customer {
         }
 
     }
-    //method to show account balance
+    
 
 
 }

@@ -25,7 +25,7 @@ public class accounts {
                 if (last_4 == checkingAccountNum) {
                     checkingAccountBalance += amount;
                 } else if (last_4 == savingsAccountNum)
-                    checkingAccountBalance += amount;
+                    savingsAccountBalance += amount;
                 System.out.println(amount + "$ has been added to balance");
             } else System.out.println("please enter a correct amount you would like to deposit");
         }
@@ -38,7 +38,7 @@ public class accounts {
         if (last_4==checkingAccountNum || last_4==savingsAccountNum);{
         System.out.println("Enter the amount you would like to withdraw");
          double amount= scanner.nextDouble();
-        if (amount<=checkingAccountNum || amount<=savingsAccountNum){
+        if (amount<=checkingAccountBalance || amount<=savingsAccountBalance){
             if (last_4==checkingAccountNum)
             checkingAccountBalance -= amount;
             else if (last_4==savingsAccountNum)
