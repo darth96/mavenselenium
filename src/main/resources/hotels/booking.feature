@@ -9,7 +9,7 @@ Feature: Booking
      And Click on Search button
    Then I verify at the end of search results changes dates is displayed and enabled
 
-    Scenario:
+    Scenario: Verify user can update number of guests on Landing page
       Given I am on hotels homepage
       When I Click on Guests
          And Select Adults as "4"
